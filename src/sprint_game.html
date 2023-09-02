@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles/styles.scss">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <title>Sprint</title>
+</head>
+<body>
+   <!--?-------------header------------->
+   <header class="header bg-color-gray">
+      <div class="container container--header">
+         <button class="header__burger-menu"></button>
+         <div class="header__navigation">
+            <a class="header__logo" href="index.html">
+               GlobalTalk
+            </a>
+            <nav class="header__nav">
+               <a href="index.html">Home</a>
+               <a href="#">Texbook</a>
+               <a href="#">Statistics</a>
+               <button class="header__dropdown">
+                  Games
+                  <img class="icon-v" src="../src/img/icon_V.png" alt="icon V">
+                  <div class="header__dropdown-item" tabindex="0">
+                     <a href="sprint_game.html">Sprint →</a>
+                     <a href="#">Audio-call →</a>
+                  </div>
+               </button>
+               <a class="header__nav-invisible" href="sprint_game.html">Sprint</a>
+               <a class="header__nav-invisible" href="#">Audio-call</a>
+            </nav>
+         </div>
+         <div class="header__log-in">
+            <div class="log-in__info">
+               <div class="log-in__ava">
+                  <a href="#">
+                     A
+                  </a>
+               </div>
+               <a class="log-in__user" href="#">
+                  Alex
+               </a>
+               <img class="icon-v" src="../src/img/icon_V.png" alt="icin V">
+            </div>
+            <div class="log-in__authoriz">
+               <a href="#">
+                  Sign Out →
+               </a>
+            </div>
+         </div>
+      </div>
+   </header>
+   <main class="main main--container-center bg-color-gray">
+      <!--? block 1 --- runing girl--------->
+      <section class="girl bg-color-gray">
+         <div class="container container--wrapper">
+            <img class="girl__img girl__img--mini"src="./img/runing_girl.png" alt="a girl runing">
+            <div class="girl__icon-mobile-version"></div>
+            <div class="girl__main girl__main--mini">
+               <div class="main-mini__content">
+                  <div class="main-mini__content-row">
+                     <h2>Sprint</h2>
+                     <p class="lable">speed task</p>
+                  </div>
+                  <p>Trains the skill of fast translation. You have to choose if the translation corresponds to the suggested word.</p>
+               </div>
+               <form action="" class="main-mini__choose-level">
+                  <p>Choose a level:</p>
+                  <div class="choose-level__container">
+                     <input type="radio" name="choose_a_level" id="a1">
+                     <label for="a1" class="choose-level__button choose-level__button--green">
+                        A1
+                     </label>
+                     <input type="radio" name="choose_a_level" id="a2">
+                     <label for="a2" class="choose-level__button choose-level__button--yellow">
+                        A2
+                     </label>
+                     <input type="radio" name="choose_a_level" id="b1">
+                     <label for="b1" class="choose-level__button choose-level__button--orange">
+                        B1
+                     </label>
+                     <input type="radio" name="choose_a_level" id="b2">
+                     <label for="b2" class="choose-level__button choose-level__button--red">
+                        B2
+                     </label>
+                     <input type="radio" name="choose_a_level" id="c1">
+                     <label for="c1" class="choose-level__button choose-level__button--pink">
+                        C1
+                     </label>
+                     <input type="radio" name="choose_a_level" id="c2">
+                     <label for="c2" class="choose-level__button choose-level__button--cyan">
+                        C2
+                     </label>
+                  </div>
+               </form>
+               <button class="button button--cyan-dark">Get started</button>
+            </div>
+         </div>
+      </section>
+   </main>
+   <!--?-------------footer------------------->
+   <footer class="footer bg-color-gray">
+      <div class="container">
+         <nav class="footer__top">
+            <div class="footer__nav">
+               <a href="#">Home</a>
+               <a href="#">Textbook</a>
+               <a href="#">Statistics</a>
+               <a href="#">Sprint</a>
+               <a href="#">Audio-call</a>
+            </div>
+            <div class="footer__name">
+               <a href="#">Alex</a>
+               <a href="#">Gabriel</a>
+               <a href="#">Marcus</a>
+            </div>
+         </nav>
+         <div class="footer__bottom">
+            <nav class="footer__social">
+               <a href="#" class="footer__social-items footer__social-items--github">
+                  Follow us on GitHub
+               </a>
+               <a href="#" class="footer__social-items footer__social-items--gt">
+                  Follow us on GT
+               </a>
+               <a href="#" class="footer__social-items footer__social-items--youtube">
+                  Follow us on YouTube
+               </a>
+            </nav>
+            <p class="footer__copyright">
+               ©2021 GlobalTalk. Project for&nbsp<a href="#">GlobalTalk.</a>
+            </p>
+         </div>
+      </div>
+   </footer>
+   <script src="script.js"></script>
+</body>
+</html>
