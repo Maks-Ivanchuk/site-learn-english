@@ -180,6 +180,10 @@ p {
   overflow: hidden;
 }
 
+section {
+  overflow: hidden;
+}
+
 body {
   width: auto;
   height: 100%;
@@ -661,34 +665,35 @@ body {
 }
 
 .men__img {
-  background-image: url("men_with_toys.cbf96dc6.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   flex-basis: 55%;
   align-items: center;
   display: flex;
-  overflow: hidden;
+  position: relative;
+}
+
+.men__img-boy {
+  width: 100%;
+  position: relative;
+  left: 8%;
 }
 
 @media screen and (min-width: 768px) {
-  .men__img {
-    overflow: visible;
+  .men__img-boy {
+    position: static;
+    left: 0;
   }
 }
 
-.men__img img {
-  width: 100%;
-  height: auto;
-  opacity: 0;
-  position: relative;
-  top: 6%;
-  left: 56%;
+.men__img-plant {
+  width: 90%;
+  display: none;
+  position: absolute;
+  right: -50%;
 }
 
 @media screen and (min-width: 768px) {
-  .men__img img {
-    opacity: 1;
+  .men__img-plant {
+    display: flex;
   }
 }
 
