@@ -8,7 +8,7 @@ body {
 }
 
 .main {
-  padding-top: 92px;  //the first method of fixing headers + main {padding 92px}
+  padding-top: 92px; //the first method of fixing headers + main {padding 92px}
   flex: 1 1 auto;
 
   &.main--container-center {
@@ -66,8 +66,8 @@ body {
     padding-left: 20px;
     padding-right: 20px;
 
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
     }
   }
 }
@@ -81,10 +81,10 @@ body {
 .header {
 
   width: 100%;
-  position: fixed;   //the first method of fixing headers + main {padding 92px}
+  position: fixed; //the first method of fixing headers + main {padding 92px}
   z-index: 50;
 
-/*
+  /*
   position: sticky;
   top: -1px;            //second method of fixing headers
   z-index: 50;
@@ -103,9 +103,10 @@ body {
   height: 25px;
   flex-basis: 33.3%;
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
+
   // background-image: url("../img/Burger-lines.png");
   // background-repeat: no-repeat;
   // background-color: #F6F5F4;
@@ -139,18 +140,18 @@ body {
   -------*/
 }
 
- //----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
 .header__burger-menu {
-    padding: 5px 2px;
-    width: 25px;
-    background-color: #F6F5F4;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 4px;
+  padding: 5px 2px;
+  width: 25px;
+  background-color: #F6F5F4;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 4px;
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 
@@ -172,7 +173,8 @@ body {
     }
   }
 }
- //----------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------
 
 .header__logo {
   font-family: 'Dela Gothic One';
@@ -193,7 +195,7 @@ body {
   }
 
   &:hover {
-      color: #8d8d8d;
+    color: #8d8d8d;
   }
 }
 
@@ -311,11 +313,11 @@ body {
   border-radius: 15px;
   background-color: #fff;
   color: #757575;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 
-    a {
-      &:first-child {
-        color: #757575;
+  a {
+    &:first-child {
+      color: #757575;
 
       &:hover {
         color: #303030;
@@ -398,7 +400,7 @@ body {
   }
 
   &:hover {
-      color: #303030;
+    color: #303030;
   }
 }
 
@@ -496,32 +498,63 @@ body {
   flex-direction: column;
 }
 
+// .men__img {
+//   flex-basis: 55%;
+//   display: flex;
+//   align-items: flex-end;
+//   align-items: center;
+//   background-image: url('../img/men_with_toys.png');
+//   background-position: center;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   overflow: hidden;
+
+//   @media screen and (min-width: 768px) {
+//     overflow: visible;
+//   }
+
+//   img {
+//     width: 100%;
+//     height: auto;
+//     position: relative;
+//     top: 6%;
+//     left: 56%;
+//     opacity: 0;
+
+//     @media screen and (min-width: 768px) {
+//       opacity: 1;
+//     }
+//   }
+// }
+
 .men__img {
   flex-basis: 55%;
-  display: flex;
-  align-items: flex-end;
   align-items: center;
-  background-image: url('../img/men_with_toys.png');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  overflow: hidden;
+  display: flex;
+  position: relative;
+
+  @media screen and (min-width: 768px) {}
+}
+
+.men__img-boy {
+  width: 100%;
+  position: relative;
+  left: 8%;
 
   @media screen and (min-width: 768px) {
-    overflow: visible;
+    position: static;
+    left: 0;
   }
+}
 
-  img {
-    width: 100%;
-    height: auto;
-    position: relative;
-    top: 6%;
-    left: 56%;
-    opacity: 0;
+.men__img-plant {
+  position: absolute;
+  right: -35%;
+  width: 90%;
+  display: none;
 
-    @media screen and (min-width: 768px) {
-      opacity: 1;
-    }
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
 
@@ -565,7 +598,7 @@ body {
 }
 
 .girl__main-block-1 {
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding: 65px;
   }
 }
@@ -640,7 +673,7 @@ body {
     gap: 14px;
   }
 
-  & > p {
+  &>p {
     display: inline-flex;
     text-align: center;
     font-weight: 600;
@@ -734,7 +767,7 @@ body {
     border-color: #639B6D;
     color: #639B6D;
 
-    &:hover{
+    &:hover {
       background-color: rgba(99, 155, 109, 0.3);
       transition: 0.3s;
     }
@@ -744,7 +777,7 @@ body {
     border-color: #C4A24C;
     color: #C4A24C;
 
-    &:hover{
+    &:hover {
       background-color: rgba(196, 162, 76, 0.3);
     }
   }
@@ -753,7 +786,7 @@ body {
     border-color: #CB5B43;
     color: #CB5B43;
 
-    &:hover{
+    &:hover {
       background-color: rgba(203, 91, 67, 0.3);
     }
   }
@@ -762,7 +795,7 @@ body {
     border-color: #A95151;
     color: #A95151;
 
-    &:hover{
+    &:hover {
       background-color: rgba(169, 81, 81, 0.3);
     }
   }
@@ -771,7 +804,7 @@ body {
     border-color: #A15993;
     color: #A15993;
 
-    &:hover{
+    &:hover {
       background-color: rgba(161, 89, 147, 0.3);
     }
   }
@@ -793,32 +826,32 @@ input[type="radio"] {
   opacity: 0;
   z-index: -9999;
 
-  &:checked + .choose-level__button--green {
+  &:checked+.choose-level__button--green {
     background-color: #639B6D;
     color: #FFFFFF;
   }
 
-  &:checked + .choose-level__button--yellow {
+  &:checked+.choose-level__button--yellow {
     background-color: #C4A24C;
     color: #FFFFFF;
   }
 
-  &:checked + .choose-level__button--orange {
+  &:checked+.choose-level__button--orange {
     background-color: #CB5B43;
     color: #FFFFFF;
   }
 
-  &:checked + .choose-level__button--red {
+  &:checked+.choose-level__button--red {
     background-color: #A95151;
     color: #FFFFFF;
   }
 
-  &:checked + .choose-level__button--pink {
+  &:checked+.choose-level__button--pink {
     background-color: #A15993;
     color: #FFFFFF;
   }
 
-  &:checked + .choose-level__button--cyan {
+  &:checked+.choose-level__button--cyan {
     background-color: #5996A5;
     color: #FFFFFF;
   }
@@ -879,6 +912,7 @@ input[type="radio"] {
     }
   }
 }
+
 .footer__nav {
   display: flex;
   flex-direction: column;
@@ -906,7 +940,7 @@ input[type="radio"] {
   gap: 20px;
   padding-bottom: 40px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -975,4 +1009,3 @@ input[type="radio"] {
 .bg-color-gray {
   background-color: #F6F5F4;
 }
-
