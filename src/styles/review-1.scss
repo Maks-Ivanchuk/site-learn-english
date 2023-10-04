@@ -41,7 +41,6 @@ body {
     align-items: center;
     padding: 20px;
     margin: 0 20px;
-    //gap: 12px;
     border-radius: 14px;
     background-color: #FFFFFF;
     box-shadow: 0px 22.8981px 45.7963px -11.4491px rgba(52, 41, 39, 0.08);
@@ -890,6 +889,8 @@ input[type="radio"] {
   }
 }
 
+
+
 .footer__top {
   display: flex;
   justify-content: space-between;
@@ -1008,4 +1009,10 @@ input[type="radio"] {
 
 .bg-color-gray {
   background-color: #F6F5F4;
+}
+
+#slick {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
