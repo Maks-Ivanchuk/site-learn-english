@@ -15,15 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
    });
 
    $('.slider').slick({
-      adaptiveHeigh: true,
-      infinite: false,
-      slidesToShow: 3,
+      adaptiveHeight: true,
+      slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
+      centerMode: true,
+      centerPadding: '60px',
    });
 
    $('.slider__nav').slick({
-      adaptiveHeigh: true,
+
 
       slidesToShow: 3,
       slidesToScroll: 1,

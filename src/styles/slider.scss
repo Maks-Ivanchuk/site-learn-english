@@ -24,11 +24,17 @@
    border-width: 5px;
    border-radius: 15px;
    overflow: hidden;
+   margin: 0 auto; //розібратись хто робить картинку по центру, мерджин чи дісплей флекс
 
    img {
-      width: 100%;
-      height: 300px;
+      max-height: 420px;
    }
+}
+
+.item__wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .slider__nav {}
