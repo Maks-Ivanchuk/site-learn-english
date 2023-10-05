@@ -15,25 +15,18 @@ document.addEventListener("DOMContentLoaded", () => {
    });
 
    $('.slider').slick({
-      slidesToShow: 1,
+      adaptiveHeigh: true,
+      infinite: false,
+      slidesToShow: 3,
       slidesToScroll: 1,
-      fade: true,
-      asNavFor: '.slider-second',
-      responsive: [
-         {
-            breakpoint: 769,
-            settings: {
-               arrows: false,
-            }
-         },
-         {
-            breakpoint: 376,
-            settings: {
-               dots: true,
-               arrows: false,
-               asNavFor: '',
-            }
-         }
-      ]
-   }); // not working
+      dots: true,
+   });
+
+   $('.slider__nav').slick({
+      adaptiveHeigh: true,
+
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: true,
+   });
 });
