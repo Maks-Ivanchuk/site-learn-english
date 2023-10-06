@@ -15,19 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
    });
 
    $('.slider').slick({
-      adaptiveHeight: true,
+      arrows: true,
+
       slidesToShow: 1,
       slidesToScroll: 1,
       dots: true,
-      centerMode: true,
-      centerPadding: '60px',
    });
 
-   $('.slider__nav').slick({
-
-
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      dots: true,
-   });
+   // $('.slider__nav').slick({
+   //    slidesToShow: 3,
+   //    slidesToScroll: 1,
+   //    dots: true,
+   // });
 });
