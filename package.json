@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@parcel/transformer-js": "^2.8.2",
+    "jquery": "^3.7.1",
     "parcel": "^2.8.2",
     "slick-carousel": "^1.8.1"
   },
