@@ -6,6 +6,9 @@
 .pnp.js
 .parcel-cache
 dist
+slick/
+src/
+
 
 # testing
 /coverage
