@@ -1169,4 +1169,33 @@ input[type="radio"]:checked + .choose-level__button--cyan {
   background-color: #f6f5f4;
 }
 
+.slider {
+  background-color: #fff;
+  justify-content: center;
+  margin-bottom: 40px;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .slider {
+    margin-bottom: 0;
+  }
+}
+
+.container-slider {
+  max-width: 1180px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.item__wrapper {
+  max-height: 450px;
+  justify-content: center;
+  display: flex;
+}
+
+.slider__img {
+  height: 100%;
+}
+
 /*# sourceMappingURL=index.867122b9.css.map */

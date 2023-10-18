@@ -10,6 +10,17 @@ document.addEventListener("DOMContentLoaded", ()=>{
         event.target.parentElement.classList.remove("header__nav--open-burger-menu");
         body.classList.remove("lock");
     });
+    $(".slider").slick({
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true
+    });
+// $('.slider__nav').slick({
+//    slidesToShow: 3,
+//    slidesToScroll: 1,
+//    dots: true,
+// });
 });
 
 //# sourceMappingURL=index.44983732.js.map
