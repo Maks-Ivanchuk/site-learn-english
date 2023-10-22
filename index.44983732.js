@@ -14,13 +14,19 @@ document.addEventListener("DOMContentLoaded", ()=>{
         arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true
+        dots: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            }
+        ]
     });
-// $('.slider__nav').slick({
-//    slidesToShow: 3,
-//    slidesToScroll: 1,
-//    dots: true,
-// });
 });
 
 //# sourceMappingURL=index.44983732.js.map
