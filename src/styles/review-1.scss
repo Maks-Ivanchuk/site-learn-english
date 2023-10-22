@@ -200,13 +200,13 @@ body {
 .header__nav {
   flex-direction: column;
   gap: 30px;
-  padding-left: 30px;
   order: 1;
   display: none;
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
+    gap: 10%;
     align-items: center;
     padding-left: 30px;
     order: 2;
